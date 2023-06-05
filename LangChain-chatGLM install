@@ -1,5 +1,5 @@
 1. 购买百度云服务器
-2. 安装git(不能直接用yum安装，也不能yum升级安装，仍然不能yum挂靠)
+2. 安装git(不能直接用yum安装，也不能yum升级安装，仍然不能yum挂靠epel-release)
 安装编译工具和依赖库：
 sudo yum groupinstall "Development Tools"
 sudo yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
