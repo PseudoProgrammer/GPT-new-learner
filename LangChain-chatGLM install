@@ -3,7 +3,7 @@
 useradd renbing
 passwd renbing #交互命令中连续两次输入账户密码进行设置
 visudo（执行命令后再打开文件在root ALL=（ALL） ALL之后添加一行renbing ALL=（ALL） ALL）
-2. 安装git(不能直接用yum安装，也不能yum升级安装，仍然不能yum挂靠epel-release)
+2. 安装git(需要2.7.0以上，不能直接用yum安装，也不能yum升级安装，仍然不能yum挂靠epel-release)
 安装编译工具和依赖库：
 sudo yum groupinstall "Development Tools"
 sudo yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
@@ -21,5 +21,5 @@ echo "export PATH=/usr/local/git/bin:$PATH" >> ~/.bashrc
 source ~/.bashrc
 测试是否安装成功
 git --version #git version 2.9.0
-3.安装curl
+3.安装curl（需要7.41.0）
 wget https://curl.haxx.se/download/curl-7.67.0.tar.gz
