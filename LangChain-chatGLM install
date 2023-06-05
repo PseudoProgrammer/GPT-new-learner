@@ -1,14 +1,14 @@
 1. 购买百度云服务器
-2. 安装git
+2. 安装git(不能直接用yum安装，也不能yum升级安装，仍然不能yum挂靠)
 安装编译工具和依赖库：
 sudo yum groupinstall "Development Tools"
 sudo yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
 sudo yum install curl-devel  #避免出现如下错误 ，http.h:6:23: 致命错误：curl/curl.h：
 sudo yum install expat-devel  # 避免出现如下错误，http-push.c:18:19: 致命错误：expat.h：没有那个文件或目录
 下载 Git 的源代码包：
-wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-<version>.tar.gz
-tar -zxvf git-<version>.tar.gz
-cd git-<version>
+wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.0.tar.gz
+tar -zxvf git-2.9.0.tar.gz
+cd git-2.9.0
 编译和安装 Git：
 make prefix=/usr/local/git all
 sudo make prefix=/usr/local/git install
