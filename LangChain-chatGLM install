@@ -21,3 +21,5 @@ echo "export PATH=/usr/local/git/bin:$PATH" >> ~/.bashrc
 source ~/.bashrc
 测试是否安装成功
 git --version #git version 2.9.0
+3.安装curl
+wget https://curl.haxx.se/download/curl-7.67.0.tar.gz
